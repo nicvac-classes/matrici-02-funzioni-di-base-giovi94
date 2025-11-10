@@ -1,29 +1,30 @@
-//LEGGERE LE ISTRUZIONI NEL FILE README.md
-
-import java.util.Scanner;
-import java.util.Random;
-
-// Classe principale, con metodo main
-class Esercizio {
-
-    public static Scanner in = new Scanner( System.in );
-
-    public static void assegnaMatrice( /*scrivere qui i parametri richiesti dall'esercizio*/ ) {
-        // SCRIVERE QUI IL CODICE RICHIESTO DALL'ESERCIZIO
+/public static void assegnaMatrice(int[]M,int nR,int nC,int v ) {
+        i=0;
+        j=0;
+        for(i=0; i <= nR; ++1){
+            for(j=0; j<= nC; ++j ){
+                M[i][j]=v;
+            }
+        }
     }
 
-    public static void azzeraMatrice( /*scrivere qui i parametri richiesti dall'esercizio*/ ) {
-        //SCRIVERE QUI IL CODICE RICHIESTO DALL'ESERCIZIO
+    public static void azzeraMatrice(int[]M,int nR,int nC ) {
+        assegnaMatrice (M,nC,nR,D);
     }
 
-    public static void riempiCasuale( /*scrivere qui i parametri richiesti dall'esercizio*/ ) {
+    public static void riempiCasuale(int[]M,int nR,int nC,int valoreMax,int valoreMin) {
         Random rand = new Random();
-        //SCRIVERE QUI IL CODICE RICHIESTO DALL'ESERCIZIO
+        int i=0;
+        while(i <= Nr-1){
+            int j=0;
+            while(j <= Nc-1){
+                int r=rand.nextInt(valoreMax+1-valoreMin/valoreMin);
+                M[i][j]=r;
+                ++j;
+            }
+            ++i;
+        }
     }
 
-    public static void main(String args[]) {
-        //SCRIVERE QUI IL CODICE RICHIESTO DALL'ESERCIZIO  
-    }
-}
 
-//LEGGERE LE ISTRUZIONI NEL FILE README.md
+
